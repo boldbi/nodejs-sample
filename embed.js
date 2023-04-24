@@ -7,15 +7,19 @@ var app = express();
 var bytes = require('utf8-bytes');
 var crypto = require('crypto');
 
-// Get the embedSecret key from Bold BI
-var embedSecret = "";
-
-//Enter your BoldBI credentials here
-var userEmail = "";
-
 app.use(cors());
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
+
+var appconfig = JSON.parse(fs.readFileSync('embedConfig.json'));
+
+// Get the embedSecret key from Bold BI
+var embedSecret = appconfig.EmbedSecret;
+
+var configjson ={"DashboardId": appconfig.DashboardId, "ServerUrl":appconfig.ServerUrl, "SiteIdentifier": appconfig.SiteIdentifier, "Environment": appconfig.Environment};
+
+//Enter your BoldBI credentials here
+var userEmail = appconfig.UserEmail;
 
 app.post('/embeddetail/get', function (req, response) {
   var embedQuerString = req.body.embedQuerString;
@@ -56,6 +60,7 @@ app.get("/",function (request, response) {
 
   if(pathname == "/") {
       html = fs.readFileSync("index.html", "utf8");
+    html = html.replace("<script>","<script>var configjsonstring='"+JSON.stringify(configjson)+"';var configjson=JSON.parse(configjsonstring);");
       response.write(html);
   }
   response.end();
