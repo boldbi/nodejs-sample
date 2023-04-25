@@ -23,11 +23,11 @@
 
             function embedSample() {
                 var boldbiEmbedInstance = BoldBI.create({
-                    serverUrl: rootUrl + siteIdentifier,
+                    serverUrl: rootUrl + "/" + siteIdentifier,
                     dashboardId: dashboardId,                
                     embedContainerId: "dashboard",// This should be the container id where you want to embed the dashboard
                     embedType: BoldBI.EmbedType.Component,
-                    environment: environment=="enterprise"? BoldBI.Environment.Enterprise:BoldBI.Environment.Cloud,
+                    environment: environment=="onpremise"? BoldBI.Environment.Enterprise:BoldBI.Environment.Cloud,
                     mode: BoldBI.Mode.View,
                     height: "800px",
                     width: "1200px",
