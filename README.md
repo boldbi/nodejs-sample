@@ -18,50 +18,53 @@ The samples require the following requirements to run.
 
 ## Using the NodeJS sample
  
- * Open the Node.js sample in Visual studio code, then open the embed.js file in the following location, /NodeJs/embed.js.
- * Please change the following properties in the `embed.js` file as per your Bold BI Server.
+ * Open the Node.js sample in Visual Studio Code.
 
-    <meta charset="utf-8"/>
-    <table>
+ * This [link](https://help.boldbi.com/cloud-bi/site-administration/embed-settings/) using able to download the embedConfig.json file. 
+
+ * Copy the downloaded embedConfig.json file, and paste it into the sample [application](https://github.com/boldbi/aspnet-core-sample/tree/master/BoldBI.Embed.Sample/BoldBI.Embed.Sample).
+ 
+ * The following properties are used in `embedConfig.json` file:
+
+   <meta charset="utf-8"/>
+   <table>
     <tbody>
-        <tr>
-            <td align="left">EmbedSecret</td>
-            <td align="left">Get your EmbedSecret key from the Embed tab by enabling the `Enable embed authentication` on the Administration page https://help.boldbi.com/embedded-bi/site-administration/embed-settings/.</td>
-        </tr>
-        <tr>
-            <td align="left">UserEmail</td>
-            <td align="left">UserEmail of the Admin in your Bold BI server or have permission to view the dashbaord, which would be used to render the dashboard.</td>
-        </tr>
+    <tr>
+        <td align="left">ServerUrl</td>
+        <td align="left">Dashboard Server URL (Eg: http://localhost:5000/bi, http://demo.boldbi.com/bi).</td>
+    </tr>
+    <tr>
+        <td align="left">EmbedSecret</td>
+        <td align="left">Get your EmbedSecret key from the Embed tab by enabling the `Enable embed authentication` on the Administration page https://help.boldbi.com/embedded-bi/site-administration/embed-settings/.</td>
+    </tr>
+    <tr>
+        <td align="left">SiteIdentifier</td>
+        <td align="left">For the Bold BI Enterprise edition, it should be like `site/site1`. For Bold BI Cloud, it should be an empty string.</td>
+    </tr>
+    <tr>
+        <td align="left">Environment</td>
+        <td align="left">Your Bold BI application environment. (If Cloud, you should use `cloud,` if Enterprise, you should use `enterprise`).</td>
+    </tr>
+    <tr>
+        <td align="left">UserEmail</td>
+        <td align="left">UserEmail of the Admin in your Bold BI, which would be used to get the dashboard list.</td>
+    </tr>
+    <tr>
+        <td align="left">DashboardId</td>
+        <td align="left">Item id of the dashboard to be embedded in your application.</td>
+    </tr>
+    <tr>
+        <td align="left">EmbedType</td>
+        <td align="left">BoldBI.EmbedType.Component.</td>
+    </tr>
+    <tr>
+        <td align="left">ExpirationTime</td>
+        <td align="left">Token expiration time.</td>
+    </tr>
     </tbody>
     </table>
-	
-  * Open the `index.html` file in NodeJs sample and provide the value for following properties,
-  
-    <meta charset="utf-8"/>
-        <table>
-        <tbody>
-            <tr>
-                <td align="left">RootUrl</td>
-                <td align="left">Dashboard Server URL (Eg: http://localhost:5000/bi, http://demo.boldbi.com/bi).</td>
-            </tr>
-            <tr>
-                <td align="left">SiteIdentifier</td>
-                <td align="left">For the Bold BI Enterprise edition, it should be like `site/site1`. For Bold BI Cloud, it should be an empty string.</td>
-            </tr>
-            <tr>
-                <td align="left">Environment</td>
-                <td align="left">Your Bold BI application environment. (If Cloud, you should use `cloud,` if Enterprise, you should use `enterprise`).</td>
-            </tr>
-            <tr>
-                <td align="left">dashboardId</td>
-                <td align="left">Provide the dashboard id of the dashboard you want to embed in view or edit mode. Ignore this property to create new dashboard.</td>
-            </tr>
-            <tr>
-                <td align="left">authorizationUrl</td>
-                <td align="left">Url of the 'GetDetails' action in the ASP.NET application.</td>
-            </tr>
-        </tbody>
-        </table>
+
+ * Run the application.
 
 ### Install npm
 
