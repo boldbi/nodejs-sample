@@ -20,10 +20,17 @@ The samples require the following requirements to run.
  
  * Open the Node.js sample in Visual Studio Code.
 
- * Download the embedConfig.json file by referring to this [help documentation](https://help.boldbi.com/cloud-bi/site-administration/embed-settings/)
+ * Ensure that you have enabled embed authentication on the embed settings [page](https://help.boldbi.com/embedded-bi/site-administration/embed-settings/#get-embed-configuration-file). If it is not enabled, enable it. Please refer to the below image.
 
- * Copy the downloaded embedConfig.json file and place it into the following [location](https://github.com/boldbi/aspnet-core-sample/tree/master/BoldBI.Embed.Sample/BoldBI.Embed.Sample) of the application. Please refer to the below image.
-![Example image](https://user-images.githubusercontent.com/91586758/236446545-8fee653c-4239-49c3-87a1-7d2477681aac.png)
+   ![Embed Settings](https://github.com/boldbi/aspnet-core-sample/assets/91586758/98cdaccc-635e-4ee7-b6f9-61434284afcb)
+
+ * Download the embedConfig.json file by referring to this [link](https://help.boldbi.com/embedded-bi/site-administration/embed-settings/#get-embed-configuration-file).
+
+ * Copy the downloaded embedConfig.json file and place it into the following [location](https://github.com/boldbi/aspnet-core-sample/tree/master/BoldBI.Embed.Sample) of the application. Please refer to the below image.
+
+   ![EmbedConfig image](https://github.com/boldbi/aspnet-core-sample/assets/91586758/bdb83a3e-02e4-4e99-ad57-717438e5ec5c)
+
+   ![EmbedConfig Properties](https://github.com/boldbi/aspnet-core-sample/assets/91586758/03ea78a6-ac67-4e83-8c61-64975432f1c5)
  
  * The following properties are used in `embedConfig.json` file:
 
@@ -44,7 +51,7 @@ The samples require the following requirements to run.
     </tr>
     <tr>
         <td align="left">Environment</td>
-        <td align="left">Your Bold BI application environment. (If Cloud, you should use `cloud,` if Enterprise, you should use `enterprise`).</td>
+        <td align="left">Your Bold BI application environment. (If it is cloud analytics server, use `BoldBI.Environment.Cloud`; if it is your own server, use `BoldBI.Environment.Enterprise`).</td>
     </tr>
     <tr>
         <td align="left">UserEmail</td>
