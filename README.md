@@ -89,6 +89,8 @@ To run the samples, use the below command
 node embed.js
 ```
 
+Once execute above command the sample will be hosted in http://localhost:8080/
+
 Please refer to the [help documentation](https://help.boldbi.com/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/#how-to-run-the-sample) to know how to run the sample.
 
 ## Online Demos
