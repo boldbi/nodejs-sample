@@ -1,5 +1,6 @@
 var fs = require("fs");
 var http = require("http");
+var https = require("https");
 var url = require("url");
 var express = require('express');
 var cors = require('cors');
@@ -30,7 +31,8 @@ app.post('/embeddetail/get', function (req, response) {
   var embedSignature = "&embed_signature=" + GetSignatureUrl(embedQuerString);
   var embedDetailsUrl = "/embed/authorize?" + embedQuerString+embedSignature;
 
-  http.get(dashboardServerApiUrl+embedDetailsUrl, function(res){
+  var serverProtocol = url.parse(dashboardServerApiUrl).protocol == 'https:' ? https : http;
+  serverProtocol.get(dashboardServerApiUrl+embedDetailsUrl, function(res){
         var str = '';
         res.on('data', function (chunk) {
                str += chunk;
