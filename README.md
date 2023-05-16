@@ -4,7 +4,7 @@ This project was generated using NodeJS CLI version 6.0 or a later version that 
 
  ## Dashboard View
 
-![Dashboard View](https://github.com/boldbi/aspnet-core-sample/assets/91586758/73318269-f8e9-4b49-b597-d82850c60952)
+![Dashboard View](https://github.com/boldbi/aspnet-core-sample/assets/91586758/f662cee3-4367-4965-9b58-032293901071)
 
  ## Requirements/Prerequisites
 
