@@ -10,6 +10,7 @@ This project was generated using NodeJS CLI version 6.0 or a later version that 
 
  * [Node.js](https://nodejs.org/en/)
  * [Visual Studio Code](https://code.visualstudio.com/download)
+ * [Python](https://www.python.org/downloads/release/python-383/)
 
  ### Help link
 
