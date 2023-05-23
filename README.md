@@ -2,9 +2,9 @@
 
 This project was generated using NodeJS CLI version 6.0 or a later version that is installed on your system before it was compiled. This Bold BI Node.js sample contains the Dashboard embedding sample. This sample demonstrates the dashboard rendering available in your Bold BI server.
 
- ## Dashboard View
+ ## Dashboard view
 
-![Dashboard View](https://github.com/boldbi/aspnet-core-sample/assets/91586758/4af68f49-ffc0-400a-a323-55a3f3600a1d)
+![Dashboard View](https://github.com/boldbi/aspnet-core-sample/assets/91586758/cb2dc2de-8327-4848-8ec5-1acf01888064)
 
  ## Requirements/Prerequisites
 
@@ -68,7 +68,8 @@ This project was generated using NodeJS CLI version 6.0 or a later version that 
     node embed.js
     ```
 
-Once execute above command the sample will be hosted in http://localhost:8080/
+Once execute above command the sample will be hosted in http://localhost:8080/. Please refer to the following image.
+![dashboard view](https://github.com/boldbi/aspnet-core-sample/assets/91586758/cb2dc2de-8327-4848-8ec5-1acf01888064)
 
 Please refer to the [help documentation](https://help.boldbi.com/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/#how-to-run-the-sample) to know how to run the sample.
 
