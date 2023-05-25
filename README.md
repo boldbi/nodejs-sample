@@ -1,6 +1,6 @@
- # BoldBI Embedded Sample in NodeJS
+ # Bold BI Embedded Sample in NodeJS
 
-This project was generated using NodeJS 12.13 or a later version that is installed on your system before it was compiled. This Bold BI Node.js sample contains the Dashboard embedding sample. This sample demonstrates the dashboard rendering available in your Bold BI server.
+This project was created using NodeJS 14.16. The purpose of this application is to demonstrate how to render the dashboard available on your Bold BI server.
 
  ## Dashboard view
 
@@ -11,32 +11,33 @@ This project was generated using NodeJS 12.13 or a later version that is install
  * [Node.js](https://nodejs.org/en/)
  * [Python 3.8](https://www.python.org/downloads/release/python-383/)
 
- ### Help link
+> **NOTE:** The version of Node.js is 14.16.
+
+ #### Help link
 
  * https://help.boldbi.com/embedded-bi/faq/where-can-i-find-the-product-version/
 
- ### Supported browsers
+ #### Supported browsers
   
-  * Google Chrome, Microsoft Edge, Mozilla Firefox.
+  * Google Chrome, Microsoft Edge, Mozilla Firefox, and Safari.
 
  ## Configuration
 
- * Ensure that you have enabled embed authentication on the embed settings [page](https://help.boldbi.com/embedded-bi/site-administration/embed-settings/#get-embed-configuration-file). If it is not enabled, enable it. Please refer to the below image.
+ * Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/embedded-bi/site-administration/embed-settings/#get-embed-configuration-file) to enable it.
 
    ![Embed Settings](https://github.com/boldbi/aspnet-core-sample/assets/91586758/b3a81978-9eb4-42b2-92bb-d1e2735ab007)
 
- * Download the embedConfig.json file by referring to this [link](https://help.boldbi.com/embedded-bi/site-administration/embed-settings/#get-embed-configuration-file). Please refer to the below image.
+ * To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/embedded-bi/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
 
     ![Embed Settings Download](https://github.com/boldbi/aspnet-core-sample/assets/91586758/d27d4cfc-6a3e-4c34-975e-f5f22dea6172)
     ![EmbedConfig Properties](https://github.com/boldbi/aspnet-core-sample/assets/91586758/d6ce925a-0d4c-45d2-817e-24d6d59e0d63)
 
- * Copy the downloaded embedConfig.json file and place it into the following [location](https://github.com/boldbi/nodejs-sample) of the application. Please refer to the below image.
-
+ * Copy the downloaded embedConfig.json file and paste it into the designated [location](https://github.com/boldbi/nodejs-sample) within the application. Please ensure that you have placed it in the application as shown in the following image.
    ![EmbedConfig image](https://github.com/boldbi/aspnet-core-sample/assets/91586758/5475fe01-2f43-4388-b91d-c6447f101aa4)
 
- ## How to run sample using command prompt 
+ ## Run a Sample Using Command Prompt
     
-  1. Open command prompt in this file [location](https://github.com/boldbi/nodejs-sample).
+  1. Open the command prompt and navigate to the specified file [location](https://github.com/boldbi/nodejs-sample) where the project is located.
 
   2. To install all dependent packages, use the below command
 
@@ -44,7 +45,7 @@ This project was generated using NodeJS 12.13 or a later version that is install
      npm install
      ```
   
-  3. To run the samples, use the below command:
+  3. Finally, run the application using the below command
  
      ```bash
      node embed.js
@@ -54,23 +55,23 @@ This project was generated using NodeJS 12.13 or a later version that is install
 
   * Visual studio code(https://code.visualstudio.com/download)
 
-  ### How to run sample using visual studio code
+  ### Run a Sample Using Visual Studio Code
  
   * Open the NodeJS sample in Visual Studio Code. 
    
-  * Open the terminal in Visual Studio Code, install all dependent packages by executing the following command in the terminal: 
+  * Open the terminal in Visual Studio Code and install all dependent packages by executing the following command in the terminal
     ```bash
     npm install
     ```
  
-  * Run the application using the below command.
+  * Finally, run the application using the below command. 
     ```bash
     node embed.js
     ```
 
-  Once execute above command the sample will be hosted in http://localhost:8080/. Please refer to the following image.
-
-  ![dashboard view](https://github.com/boldbi/aspnet-core-sample/assets/91586758/cb2dc2de-8327-4848-8ec5-1acf01888064)
+  * After executing the command, the application will automatically launch in the default browser. You can access it at the specified port number (e.g., http://localhost:8080/).
+    
+    ![dashboard view](https://github.com/boldbi/aspnet-core-sample/assets/91586758/cb2dc2de-8327-4848-8ec5-1acf01888064)
 
 Please refer to the [help documentation](https://help.boldbi.com/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/#how-to-run-the-sample) to know how to run the sample.
 
