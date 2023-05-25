@@ -33,7 +33,8 @@ This project was created using NodeJS 14.16. The purpose of this application is 
     ![EmbedConfig Properties](https://github.com/boldbi/aspnet-core-sample/assets/91586758/d6ce925a-0d4c-45d2-817e-24d6d59e0d63)
 
  * Copy the downloaded embedConfig.json file and paste it into the designated [location](https://github.com/boldbi/nodejs-sample) within the application. Please ensure that you have placed it in the application as shown in the following image.
-   ![EmbedConfig image](https://github.com/boldbi/aspnet-core-sample/assets/91586758/5475fe01-2f43-4388-b91d-c6447f101aa4)
+
+    ![EmbedConfig image](https://github.com/boldbi/aspnet-core-sample/assets/91586758/5475fe01-2f43-4388-b91d-c6447f101aa4)
 
  ## Run a Sample Using Command Prompt
     
