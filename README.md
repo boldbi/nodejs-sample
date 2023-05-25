@@ -1,6 +1,6 @@
  # Bold BI Embedded Sample in NodeJS
 
-This project was created using NodeJS 14.16. The purpose of this application is to demonstrate how to render the dashboard available on your Bold BI server.
+This project was created using NodeJS 12.13. The purpose of this application is to demonstrate how to render the dashboard available on your Bold BI server.
 
  ## Dashboard view
 
@@ -11,7 +11,7 @@ This project was created using NodeJS 14.16. The purpose of this application is 
  * [Node.js](https://nodejs.org/en/)
  * [Python 3.8](https://www.python.org/downloads/release/python-383/)
 
-> **NOTE:** The version of Node.js is 14.16.
+> **NOTE:** The version of Node.js is 12.13.
 
  #### Help link
 
