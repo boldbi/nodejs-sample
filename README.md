@@ -11,7 +11,7 @@ This project was created using NodeJS 12.13. The purpose of this application is 
  * [Node.js](https://nodejs.org/en/)
  * [Python 3.8](https://www.python.org/downloads/release/python-383/)
 
-> **NOTE:** The version of Node.js is 12.13.
+> **NOTE:** Node.js versions 12.13 to 18.16 are supported.
 
  #### Help link
 
