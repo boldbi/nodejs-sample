@@ -17,7 +17,7 @@ var appconfig = JSON.parse(fs.readFileSync('embedConfig.json'));
 // Get the embedSecret key from Bold BI
 var embedSecret = appconfig.EmbedSecret;
 
-var configjson ={"DashboardId": appconfig.DashboardId, "ServerUrl":appconfig.ServerUrl, "SiteIdentifier": appconfig.SiteIdentifier, "Environment": appconfig.Environment};
+var configjson ={"DashboardId": appconfig.DashboardId, "ServerUrl":appconfig.ServerUrl, "SiteIdentifier": appconfig.SiteIdentifier, "Environment": appconfig.Environment, "EmbedType": appconfig.EmbedType};
 
 //Enter your BoldBI credentials here
 var userEmail = appconfig.UserEmail;
