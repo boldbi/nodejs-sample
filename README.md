@@ -1,6 +1,6 @@
  # Bold BI Embedded Sample in NodeJS
 
-This project was created using NodeJS 12.13. The purpose of this application is to demonstrate how to render the dashboard available on your Bold BI server.
+This project was created using NodeJS 12.13. This application aims to demonstrate how to render the dashboard available on your Bold BI server.
 
  ## Dashboard view
 
@@ -23,7 +23,7 @@ This project was created using NodeJS 12.13. The purpose of this application is 
 
  ## Configuration
 
- * Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+ * Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
    ![Embed Settings](https://github.com/boldbi/aspnet-core-sample/assets/91586758/b3a81978-9eb4-42b2-92bb-d1e2735ab007)
 
@@ -32,7 +32,7 @@ This project was created using NodeJS 12.13. The purpose of this application is 
     ![Embed Settings Download](https://github.com/boldbi/aspnet-core-sample/assets/91586758/d27d4cfc-6a3e-4c34-975e-f5f22dea6172)
     ![EmbedConfig Properties](https://github.com/boldbi/aspnet-core-sample/assets/91586758/d6ce925a-0d4c-45d2-817e-24d6d59e0d63)
 
- * Copy the downloaded embedConfig.json file and paste it into the designated [location](https://github.com/boldbi/nodejs-sample) within the application. Please ensure that you have placed it in the application as shown in the following image.
+ * Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/nodejs-sample) within the application. Please ensure you have placed it in the application, as shown in the following image.
 
     ![EmbedConfig image](https://github.com/boldbi/aspnet-core-sample/assets/91586758/5475fe01-2f43-4388-b91d-c6447f101aa4)
 
@@ -40,13 +40,13 @@ This project was created using NodeJS 12.13. The purpose of this application is 
     
   1. Open the command prompt and navigate to the specified file [location](https://github.com/boldbi/nodejs-sample) where the project is located.
 
-  2. To install all dependent packages, use the below command
+  2. To install all dependent packages, use the following command
 
      ```bash
      npm install
      ```
   
-  3. Finally, run the application using the below command
+  3. Finally, run the application using the following command
  
      ```bash
      node embed.js
@@ -65,7 +65,7 @@ This project was created using NodeJS 12.13. The purpose of this application is 
     npm install
     ```
  
-  * Finally, run the application using the below command. 
+  * Finally, run the application using the following command. 
     ```bash
     node embed.js
     ```
@@ -78,7 +78,7 @@ Please refer to the [help documentation](https://help.boldbi.com/embedding-optio
 
 ## Important notes
 
-It is recommended to not store passwords and sensitive information in configuration files for security reasons, in a real-world application. Instead, you should consider using a secure application, such as Key Vault, to safeguard your credentials.
+It is recommended not to store passwords and sensitive information in configuration files for security reasons in a real-world application. Instead, it would be best to consider using a secure application, such as Key Vault, to safeguard your credentials.
 
 ## Online demos
 
