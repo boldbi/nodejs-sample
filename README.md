@@ -36,9 +36,9 @@ This project was created using NodeJS 12.13. This application aims to demonstrat
 
     ![EmbedConfig image](https://github.com/boldbi/aspnet-core-sample/assets/91586758/5475fe01-2f43-4388-b91d-c6447f101aa4)
 
- ## Run a Sample Using Command Prompt
+ ## Run a Sample Using Command Line Interface
     
-  1. Open the command prompt and navigate to the specified file [location](https://github.com/boldbi/nodejs-sample) where the project is located.
+  1. Open the command line interface and navigate to the specified file [location](https://github.com/boldbi/nodejs-sample) where the project is located.
 
   2. To install all dependent packages, use the following command
 
@@ -51,6 +51,8 @@ This project was created using NodeJS 12.13. This application aims to demonstrat
      ```bash
      node embed.js
      ```
+
+  4. After the application has started, it will display a URL in the `command line interface`, typically something like (e.g., http://localhost:8080/). Copy this URL and paste it into your default web browser.
 
  ## Developer IDE
 
@@ -70,7 +72,7 @@ This project was created using NodeJS 12.13. This application aims to demonstrat
     node embed.js
     ```
 
-  * After executing the command, the application will automatically launch in the default browser. You can access it at the specified port number (e.g., http://localhost:8080/).
+  * After the application has started, it will display a URL in the `command line interface`, typically something like (e.g., http://localhost:8080/). Copy this URL and paste it into your default web browser.
     
     ![dashboard view](https://github.com/boldbi/aspnet-core-sample/assets/91586758/cb2dc2de-8327-4848-8ec5-1acf01888064)
 
