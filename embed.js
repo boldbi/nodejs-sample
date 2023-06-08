@@ -1,5 +1,6 @@
 var fs = require("fs");
 var http = require("http");
+var https = require("https");
 var url = require("url");
 var express = require('express');
 var cors = require('cors');
@@ -7,15 +8,19 @@ var app = express();
 var bytes = require('utf8-bytes');
 var crypto = require('crypto');
 
-// Get the embedSecret key from Bold BI
-var embedSecret = "";
-
-//Enter your BoldBI credentials here
-var userEmail = "";
-
 app.use(cors());
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
+
+var appconfig = JSON.parse(fs.readFileSync('embedConfig.json'));
+
+// Get the embedSecret key from Bold BI
+var embedSecret = appconfig.EmbedSecret;
+
+var configjson ={"DashboardId": appconfig.DashboardId, "ServerUrl":appconfig.ServerUrl, "SiteIdentifier": appconfig.SiteIdentifier, "Environment": appconfig.Environment, "EmbedType": appconfig.EmbedType};
+
+//Enter your BoldBI credentials here
+var userEmail = appconfig.UserEmail;
 
 app.post('/embeddetail/get', function (req, response) {
   var embedQuerString = req.body.embedQuerString;
@@ -26,7 +31,8 @@ app.post('/embeddetail/get', function (req, response) {
   var embedSignature = "&embed_signature=" + GetSignatureUrl(embedQuerString);
   var embedDetailsUrl = "/embed/authorize?" + embedQuerString+embedSignature;
 
-  http.get(dashboardServerApiUrl+embedDetailsUrl, function(res){
+  var serverProtocol = url.parse(dashboardServerApiUrl).protocol == 'https:' ? https : http;
+  serverProtocol.get(dashboardServerApiUrl+embedDetailsUrl, function(res){
         var str = '';
         res.on('data', function (chunk) {
                str += chunk;
@@ -56,6 +62,7 @@ app.get("/",function (request, response) {
 
   if(pathname == "/") {
       html = fs.readFileSync("index.html", "utf8");
+    html = html.replace("<script>","<script>var configjsonstring='"+JSON.stringify(configjson)+"';var configjson=JSON.parse(configjsonstring);");
       response.write(html);
   }
   response.end();

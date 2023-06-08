@@ -5,11 +5,9 @@
   "main": "embed.js",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "utf8-bytes": "^0.0.1",
-    "@boldbi/boldbi-embedded-sdk": "^5.3.53"
+    "express": "^4.18.2",
+    "utf8-bytes": "^0.0.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
