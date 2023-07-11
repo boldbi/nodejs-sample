@@ -13,10 +13,6 @@ This project was created using NodeJS 12.13. This application aims to demonstrat
 
 > **NOTE:** Node.js versions 12.13 to 18.16 are supported.
 
- #### Help link
-
- * https://help.boldbi.com/embedded-bi/faq/where-can-i-find-the-product-version/
-
  #### Supported browsers
   
   * Google Chrome, Microsoft Edge, Mozilla Firefox, and Safari.
@@ -85,7 +81,6 @@ It is recommended not to store passwords and sensitive information in configurat
 ## Online demos
 
 Look at the Bold BI Embedding sample to live demo [here](https://samples.boldbi.com/embed).
-
 
 ## Documentation
 
