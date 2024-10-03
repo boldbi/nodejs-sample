@@ -11,7 +11,7 @@ This project was created using NodeJS 12.13. This application aims to demonstrat
 * [Node.js](https://nodejs.org/en/)
 * [Python 3.8](https://www.python.org/downloads/release/python-383/)
 
-> **NOTE:** Node.js versions 18.18 to 12.15 are supported.
+> **NOTE:** Node.js versions 18.18 to 20.15 are supported.
 
 ### Supported browsers
   
