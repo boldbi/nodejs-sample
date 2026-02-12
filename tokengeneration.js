@@ -13,10 +13,9 @@ app.use(express.json());
 // Read JSON as UTF-8 and strip BOM if present to avoid parse errors
 var appconfig = JSON.parse(fs.readFileSync('embedConfig.json', 'utf8').replace(/^\uFEFF/, ''));
 
-var configjson ={"DashboardId": appconfig.DashboardId, "ServerUrl":appconfig.ServerUrl, "SiteIdentifier": appconfig.SiteIdentifier, "Environment": appconfig.Environment, "EmbedType": appconfig.EmbedType};
+var configjson ={"DashboardId": appconfig.DashboardId, "ServerUrl": appconfig.ServerUrl, "SiteIdentifier": appconfig.SiteIdentifier, "Environment": appconfig.Environment, "EmbedType": appconfig.EmbedType};
 
 app.post('/TokenGeneration', function (req, response) {
-  //object models
   const embedDetails = {
     email: appconfig.UserEmail,
     serverurl: appconfig.ServerUrl,
