@@ -45,7 +45,7 @@ This project was created using NodeJS 18.18. This application aims to demonstrat
   3. Finally, run the application using the following command
 
      ```bash
-     node embed.js
+     node tokengeneration.js
      ```
 
   4. After the application has started, it will display a URL in the `command line interface`, typically something like (e.g., <http://localhost:8080/>). Copy this URL and paste it into your default web browser.
@@ -67,7 +67,7 @@ This project was created using NodeJS 18.18. This application aims to demonstrat
 * Finally, run the application using the following command.
   
     ```bash
-    node embed.js
+    node tokengeneration.js
     ```
 
 * After the application has started, it will display a URL in the `command line interface`, typically something like (e.g., <http://localhost:8080/>). Copy this URL and paste it into your default web browser.
