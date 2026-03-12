@@ -12,7 +12,9 @@ app.use(cors());
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
 
-var appconfig = JSON.parse(fs.readFileSync('embedConfig.json'));
+var rawConfig = fs.readFileSync('embedConfig.json', 'utf8');
+rawConfig = rawConfig.replace(/^\uFEFF/, '');
+var appconfig = JSON.parse(rawConfig);
 
 // Get the embedSecret key from Bold BI
 var embedSecret = appconfig.EmbedSecret;
